@@ -1,0 +1,29 @@
+{
+  "name": "@rdcl/nonce",
+  "version": "1.0.0",
+  "description": "Generate a random alphanumerical string with a specified length.",
+  "main": "index.js",
+  "scripts": {
+    "cover": "istanbul cover _mocha -- -R spec test/*",
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rudiculous/node-nonce"
+  },
+  "author": "RJ van der Weide <rj@rdcl.nl> (https://rdcl.nl)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rudiculous/node-nonce/issues"
+  },
+  "homepage": "https://github.com/rudiculous/node-nonce#readme",
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "coveralls": "^2.11.4",
+    "istanbul": "^0.4.0",
+    "mocha": "^2.3.3"
+  },
+  "dependencies": {
+    "bluebird": "^2.10.2"
+  }
+}
