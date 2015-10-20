@@ -29,4 +29,8 @@ describe('#nonce', function () {
         done()
       })
   })
+
+  it('should strip non-alphanumerical characters', function () {
+    expect(nonce._sanitize('==/=/==14oz', 4)).to.equal('14oz')
+  })
 })

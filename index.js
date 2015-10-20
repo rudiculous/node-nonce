@@ -4,6 +4,7 @@ const Promise = require('bluebird')
 const crypto = Promise.promisifyAll(require('crypto'))
 
 exports = module.exports = nonce
+exports._sanitize = sanitize
 
 /**
  * Generate a random alphanumerical string with a specified length.
