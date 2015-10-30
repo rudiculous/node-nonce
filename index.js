@@ -1,7 +1,7 @@
 'use strict'
-const Promise = require('bluebird')
+const Bluebird = require('bluebird')
 
-const crypto = Promise.promisifyAll(require('crypto'))
+const crypto = Bluebird.promisifyAll(require('crypto'))
 
 exports = module.exports = nonce
 exports._sanitize = sanitize
